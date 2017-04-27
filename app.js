@@ -17,28 +17,28 @@ function ItunesController(){
         var song = songList[i]
         songTemplate +=
             `
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-xs-12">
             <div class="well">                
                 <div class="content-container">
                     <div class="row">
-                        <div class="col-md-1">
+                        <div class="col-xs-1 text-center">
                             <img class="thumbnail" src="${song.albumArt}">
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-xs-3 text-center">
                             <audio controls>
                                 <source src="${song.preview}">
                             </audio>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-xs-1">
                             <h4>${song.artist}</h4>
                         </div>
-                        <div class="col-md-2 text-center">
+                        <div class="col-xs-2 text-center">
                             <h4>${song.title}</h4>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <h4>${song.collection}</h4>
                         </div>                        
-                        <div class="col-md-2 text-center">
+                        <div class="col-xs-2 text-center">
                             <h4>${song.price}
                         </div>
                     </div>                  
